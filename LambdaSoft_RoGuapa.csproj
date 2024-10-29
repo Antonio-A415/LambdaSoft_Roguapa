@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>LambdaSoft_RoGuapa</RootNamespace>
     <AssemblyName>LambdaSoft_RoGuapa</AssemblyName>
-    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
@@ -273,8 +273,14 @@
     <Compile Include="Views\Apartados\WindowBusquedaApartados.xaml.cs">
       <DependentUpon>WindowBusquedaApartados.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Categorias\Categorias.xaml.cs">
+      <DependentUpon>Categorias.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Login\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Registro_Produc\RegistroProd.xaml.cs">
+      <DependentUpon>RegistroProd.xaml</DependentUpon>
     </Compile>
     <Page Include="Assets\Icons.xaml">
       <SubType>Designer</SubType>
@@ -366,7 +372,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Categorias\Categorias.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Login\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Registro_Produc\RegistroProd.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -420,6 +434,15 @@
     <Resource Include="Assets\InventarioIcons\delete.png" />
     <Resource Include="Assets\InventarioIcons\edit.png" />
     <Resource Include="Assets\InventarioIcons\Roguapa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\InventarioIcons\inventory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\InventarioIcons\storefront.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\InventarioIcons\favorite.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
