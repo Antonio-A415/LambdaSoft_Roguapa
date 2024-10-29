@@ -1,0 +1,177 @@
+﻿<Page x:Class="LambdaSoft_RoGuapa.Pages.IventarioPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LambdaSoft_RoGuapa.Pages"
+      mc:Ignorable="d"
+      d:DesignHeight="602" d:DesignWidth="1420"
+      Background="{StaticResource SolidWhite}"
+      Title="IventarioPage">
+    <StackPanel Orientation="Vertical" Margin="20,0,20,0"  VerticalAlignment="Center" Height="623"  >
+        <StackPanel Orientation="Horizontal"  Width="1324">
+
+            <Border Height="98" Width="315" HorizontalAlignment="Stretch" >
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/Assets/InventarioIcons/Roguapa.jpg" Width="306" Height="98" Stretch="Fill" />
+
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource BorderStyleX3}"  Width="1006" Height="98" VerticalAlignment="Stretch" Background="{StaticResource SolidSecondary}" Panel.ZIndex="1"  >
+                <StackPanel Orientation="Horizontal"  Margin="10" >
+
+                    <TextBlock Text="INVENTARIO" Grid.Row="1" Style="{StaticResource DefaultTextBlockX2}" FontFamily="Poppins Medium" FontWeight="Bold" Height="42" Width="759" TextAlignment="Center"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Width="1315" Margin="0,10,0,0">
+            <Border Width="308" Background="{StaticResource SolidLavender}"    Style="{StaticResource BorderStyleX2}" Cursor="Hand" >
+                <StackPanel Orientation="Vertical" >
+                    <StackPanel Orientation="Horizontal" Width="306" Cursor="Hand">
+                        <Grid>
+                            <Ellipse Width="120" Height="120" Fill="{StaticResource SolidPrimary}" />
+                            <Image Source="/Assets/InventarioIcons/category.png" Width="72"/>
+                        </Grid>
+                        <StackPanel Orientation="Vertical" Width="180" VerticalAlignment="Center">
+                            <TextBlock x:Name="tbnumcategory" Text="30000" Height="70" Width="177" FontSize="50" TextAlignment="Right"/>
+                            <TextBlock Text="Categorias" TextAlignment="Right" FontSize="16"/>
+                        </StackPanel>
+
+                    </StackPanel>
+                    <TextBlock Text="Categorias" TextAlignment="Center"  Background="{StaticResource  SolidSecondary}" Cursor="Hand"><Image Source="/Assets/InventarioIcons/arrow_forward.png" Width="19" Height="12"/></TextBlock>
+                </StackPanel>
+
+            </Border>
+            <Border Width="308" Background="{StaticResource SolidSecondary}"  Margin="25,0,0,0" Style="{StaticResource BorderStyleX2}" >
+                <StackPanel Orientation="Vertical" >
+                    <StackPanel Orientation="Horizontal" Width="306" Height="137">
+                        <Grid>
+                            <Ellipse Width="120" Height="120" Fill="LightBlue" />
+                            <Image Source="/Assets/InventarioIcons/category.png" Width="72"/>
+                        </Grid>
+                        <StackPanel Orientation="Vertical" Width="180" VerticalAlignment="Center">
+                            <TextBlock x:Name="tbnumcategoryy" Height="70" Width="177" FontSize="50" TextAlignment="Right"><Run Language="es-mx" Text="20"/></TextBlock>
+                            <TextBlock TextAlignment="Right" FontSize="16"><Run Language="es-mx" Text="Productos registrados"/></TextBlock>
+                        </StackPanel>
+
+                    </StackPanel>
+
+                </StackPanel>
+
+            </Border>
+            <Border Width="308" Background="{StaticResource SolidSecondary}"  Margin="25,0,0,0" Style="{StaticResource BorderStyleX2}" >
+                <StackPanel Orientation="Vertical" >
+                    <StackPanel Orientation="Horizontal" Width="306" Height="137">
+                        <Grid>
+                            <Ellipse Width="120" Height="120" Fill="LightBlue" />
+                            <Image Source="/Assets/InventarioIcons/category.png" Width="72"/>
+                        </Grid>
+                        <StackPanel Orientation="Vertical" Width="180" VerticalAlignment="Center">
+                            <TextBlock x:Name="tbnumcategoryyy" Text="AVON" Height="70" Width="177" FontSize="50" TextAlignment="Right"/>
+                            <TextBlock Text="Marca mas vendida" TextAlignment="Right" FontSize="16"/>
+                        </StackPanel>
+
+                    </StackPanel>
+
+                </StackPanel>
+
+            </Border>
+            <Border Width="308" Background="{StaticResource SolidSecondary}"  Margin="25,0,0,0" Style="{StaticResource BorderStyleX2}" >
+                <StackPanel Orientation="Vertical" >
+                    <StackPanel Orientation="Horizontal" Width="306" Height="137">
+                        <Grid>
+                            <Ellipse Width="120" Height="120" Fill="LightBlue" />
+                            <Image Source="/Assets/InventarioIcons/category.png" Width="72"/>
+                        </Grid>
+                        <StackPanel Orientation="Vertical" Width="180" VerticalAlignment="Center">
+                            <TextBlock x:Name="tbnumcategoryyyy" Text="30000" Height="70" Width="177" FontSize="50" TextAlignment="Right"/>
+                            <TextBlock Text="Categorias" TextAlignment="Right" FontSize="16"/>
+                        </StackPanel>
+
+                    </StackPanel>
+
+                </StackPanel>
+
+            </Border>
+
+        </StackPanel>
+
+        <Border Style="{StaticResource BorderStyleX3}" Margin="10" Width="1320" >
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Buscar" Grid.Row="1" Style="{StaticResource DefaultTextBlock}" FontFamily="Poppins Medium" FontWeight="Bold"/>
+                <TextBox x:Name="txt1" TextWrapping="Wrap" Text="TextBox" Width="916" TextAlignment="Left" SelectionOpacity="12" FontSize="16" Height="30"  />
+
+                <Button Height="40" Background="{StaticResource SolidSecondary}" RenderTransformOrigin="0.808,0.368"  Width="316" Margin="31,0,0,0">
+                    <Image Source="/Assets/InventarioIcons/boton-agregar (1).png" />
+                </Button>
+            </StackPanel>
+        </Border>
+        <StackPanel Orientation="Horizontal" Width="1317" Height="252" Margin="0,0,0,0"  >
+            <Border Style="{StaticResource BorderStyleX2}" Width="1032" Margin="0,0,10,0" Height="247" >
+                <StackPanel Orientation="Vertical" >
+                    <ListView x:Name="Mylistview" Width="1032"  HorizontalAlignment="Center" Margin="0,0,0,3"   AutomationProperties.IsColumnHeader="True" BorderBrush="#FF7C889D" d:ItemsSource="{d:SampleData ItemCount=5}" Background="{x:Null}" Height="245"  >
+                        <ListView.View>
+                            <GridView>
+
+                                <GridViewColumn Header="ID" Width="50" DisplayMemberBinding="{Binding ID}" />
+                                <GridViewColumn Header="Nombre" Width="250" DisplayMemberBinding="{Binding Nombre}" />
+                                <GridViewColumn Header="Precio venta" Width="120" DisplayMemberBinding="{Binding Preciov}" />
+                                <GridViewColumn Header="Precio compra" Width="120" DisplayMemberBinding="{Binding Precioc}" />
+                                <GridViewColumn Header="Marca" Width="120" DisplayMemberBinding="{Binding Marca}" />
+                                <GridViewColumn Header="Categoria" Width="140" DisplayMemberBinding="{Binding Categoria}" />
+                                <GridViewColumn Header="Unidades" Width="100" DisplayMemberBinding="{Binding Unidades}" />
+                                <GridViewColumn Header="Action" Width="100">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+                                                <Button  Width="25" Height="25"  Tag="{Binding Name}"  Background= "{StaticResource SolidSecondary}">
+                                                    <Image  Source="/Assets/InventarioIcons/edit.png"></Image>
+                                                </Button>
+                                                <Button Width="25" Height="25"  Tag="{Binding Name}"  Background= "{StaticResource SolidSecondary}" Margin="20,0,0,0">
+                                                    <Image Source="/Assets/InventarioIcons/delete.png"></Image>
+                                                </Button>
+
+                                            </StackPanel>
+
+
+
+
+                                        </DataTemplate>
+
+
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+
+                            </GridView>
+
+                        </ListView.View>
+
+                    </ListView>
+
+                </StackPanel>
+            </Border>
+            <Border BorderBrush="{StaticResource SolidAzul}" BorderThickness="1" Width="275" Style="{StaticResource BorderStyleX2}" >
+                <StackPanel Orientation="Vertical" Margin="10">
+                    <TextBlock Text="Inventario" TextAlignment="Center" FontFamily="Poppins Medium"></TextBlock>
+                    <TextBlock Text="Producto" FontFamily="Poppins Medium"></TextBlock>
+                    <TextBox x:Name="InvntNombre" ></TextBox>
+                    <TextBlock Text="Stock" ></TextBlock>
+                    <TextBox x:Name="InvntStock" ></TextBox>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Agregar:" Margin="0,0,10,0"></TextBlock>
+                        <TextBox x:Name="newcan" Width="83" ></TextBox>
+
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="GUARDAR" Height="30" Width="100" Margin="10,10,18,0"  Background="{StaticResource SolidNaranja}" ></Button>
+                        <Button Content="CANCELAR" Height="30" Width="100"  Background="{StaticResource SolidNaranja}"  Margin="18,10,10,0"/>
+                    </StackPanel>
+                </StackPanel>
+
+            </Border>
+
+        </StackPanel>
+    </StackPanel>
+</Page>

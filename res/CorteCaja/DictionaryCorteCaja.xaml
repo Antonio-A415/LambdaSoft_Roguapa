@@ -1,0 +1,88 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Estilo base para todos los TextBlock -->
+    <Style x:Key="TextBlockBase" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Poppins"/>
+        <Setter Property="FontWeight" Value="Medium"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="LineHeight" Value="20"/>
+        <Setter Property="LineStackingStrategy" Value="BlockLineHeight"/>
+    </Style>
+
+    <!-- Estilo para títulos -->
+    <Style x:Key="TextBlockTitle" TargetType="TextBlock" BasedOn="{StaticResource TextBlockBase}">
+        <Setter Property="Foreground" Value="#1C1E28"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="Margin" Value="5,5,5,0"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+    </Style>
+
+    <!-- Estilo para subtítulos -->
+    <Style x:Key="TextBlockSubtitle" TargetType="TextBlock" BasedOn="{StaticResource TextBlockBase}">
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="FontFamily" Value="Poppins Medium"/>
+        <Setter Property="FontWeight" Value="Medium"/>
+        <Setter Property="Margin" Value="5,8,5,10"/>
+        <Setter Property="Foreground" Value="#9370DB"/>
+    </Style>
+
+    <!-- Estilo para etiquetas de campos -->
+    <Style x:Key="TextBlockLabel" TargetType="TextBlock" BasedOn="{StaticResource TextBlockBase}">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Margin" Value="5,5,5,2"/>
+        <Setter Property="Foreground" Value="#8B008B"/>
+    </Style>
+
+    <!-- Estilo para texto de ayuda o descripción -->
+    <Style x:Key="TextBlockHelper" TargetType="TextBlock" BasedOn="{StaticResource TextBlockBase}">
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="Foreground" Value="#666666"/>
+        <Setter Property="FontStyle" Value="Italic"/>
+        <Setter Property="Margin" Value="5,2,5,5"/>
+        <Setter Property="Opacity" Value="0.8"/>
+    </Style>
+
+    <!-- Estilo para mensajes de error -->
+    <Style x:Key="TextBlockError" TargetType="TextBlock" BasedOn="{StaticResource TextBlockBase}">
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="Foreground" Value="#FF1493"/>
+        <Setter Property="FontWeight" Value="Medium"/>
+        <Setter Property="Margin" Value="5,2,5,5"/>
+    </Style>
+
+    <!-- Estilo para valores o datos importantes -->
+    <Style x:Key="TextBlockValue" TargetType="TextBlock" BasedOn="{StaticResource TextBlockBase}">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="Foreground" Value="#4B0082"/>
+    </Style>
+
+    <!-- Estilo para textos deshabilitados -->
+    <Style x:Key="TextBlockDisabled" TargetType="TextBlock" BasedOn="{StaticResource TextBlockBase}">
+        <Setter Property="Opacity" Value="0.5"/>
+        <Setter Property="Foreground" Value="#999999"/>
+    </Style>
+
+    <Style x:Key="TextBoxCaja" TargetType="TextBox">
+        <Setter Property="Foreground" Value="{DynamicResource SolidDark}"/>
+        <Setter Property="FontFamily" Value="Poppins Medium"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Width" Value="200"/>
+        <Setter Property="Padding" Value="0,5"/>
+        <Setter Property="BorderThickness" Value="0,0,0,1"/>
+    </Style>
+
+    <Style x:Key="TextBlockHoraFecha" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{DynamicResource SolidDark}"/>
+        <Setter Property="FontFamily" Value="Poppins Medium"/>
+        <Setter Property="FontSize" Value="26"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+    </Style>
+
+</ResourceDictionary>
